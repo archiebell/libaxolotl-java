@@ -1,5 +1,6 @@
 package org.whispersystems.libaxolotl.state;
 
+import java.io.Serializable;
 import org.whispersystems.libaxolotl.IdentityKey;
 import org.whispersystems.libaxolotl.ecc.ECPublicKey;
 
@@ -9,7 +10,7 @@ import org.whispersystems.libaxolotl.ecc.ECPublicKey;
  *
  * @author Moxie Marlinspike
  */
-public class PreKeyBundle {
+public class PreKeyBundle implements Serializable {
 
   private int         registrationId;
 

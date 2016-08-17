@@ -17,7 +17,9 @@
 
 package org.whispersystems.libaxolotl.ecc;
 
-public class DjbECPrivateKey implements ECPrivateKey {
+import java.io.Serializable;
+
+public class DjbECPrivateKey implements ECPrivateKey, Serializable {
 
   private final byte[] privateKey;
 

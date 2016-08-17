@@ -17,7 +17,9 @@
 
 package org.whispersystems.libaxolotl.ecc;
 
-public class ECKeyPair {
+import java.io.Serializable;
+
+public class ECKeyPair implements Serializable {
 
   private final ECPublicKey  publicKey;
   private final ECPrivateKey privateKey;

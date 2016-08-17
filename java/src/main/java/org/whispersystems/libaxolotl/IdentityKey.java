@@ -16,6 +16,7 @@
  */
 package org.whispersystems.libaxolotl;
 
+import java.io.Serializable;
 
 import org.whispersystems.libaxolotl.ecc.Curve;
 import org.whispersystems.libaxolotl.ecc.ECPublicKey;
@@ -27,7 +28,7 @@ import org.whispersystems.libaxolotl.util.Hex;
  * @author Moxie Marlinspike
  */
 
-public class IdentityKey {
+public class IdentityKey implements Serializable {
 
   private final ECPublicKey publicKey;
 

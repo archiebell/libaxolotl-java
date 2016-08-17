@@ -21,8 +21,9 @@ import org.whispersystems.libaxolotl.util.ByteUtil;
 
 import java.math.BigInteger;
 import java.util.Arrays;
+import java.io.Serializable;
 
-public class DjbECPublicKey implements ECPublicKey {
+public class DjbECPublicKey implements ECPublicKey, Serializable {
 
   private final byte[] publicKey;
 
